@@ -36,16 +36,16 @@
                 let y = parseInt(touchobj.clientY);
                 let ex = x - 100;
                 let ey = y - 100;
-                box.innerHTML = "박스를 만지고 있군요!"
-                this.style.background = "yellow"
+                box.innerHTML = "박스를 만지고 있군요!";
+                this.style.background = "yellow";
 
-                this.style.left = ex+"px"
-                this.style.top = ey+"px"
+                this.style.left = ex+"px";
+                this.style.top = ey+"px";
             }
         }
-        box.addEventListener("touchstart",touch,tstart)
-        box.addEventListener("touchend",touch,tend)
-        box.addEventListener("touchmove",touch,tmove)
+        box.addEventListener("touchstart",touch.tstart);
+        box.addEventListener("touchend",touch.tend);
+        box.addEventListener("touchmove",touch.tmove);
     </script>
 </body>
 </html>
